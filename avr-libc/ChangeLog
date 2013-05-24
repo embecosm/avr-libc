@@ -4,6 +4,14 @@
 	* include/avr/boot.h: Don't evaluate SPMCR if SPMCSR was
 	already around.
 
+2013-05-24  Joern Rennecke <joern.rennecke@embecosm.com>
+
+	* include/stdint.h (INT8_C): Also define for __cplusplus >= 201103L.
+	If __INT8_C is defined, use GNU C preprocessor builtin-macro
+	for the definition.
+	(INT16_C INT32_C, INT64_C, UINT8_C, UINT16_C, UINT32_C): Likewise.
+	(UINT64_C, INTMAX_C, UINTMAX_C): Likewise.
+
 2013-05-13  Joerg Wunsch <j.gnu@uriah.heep.sax.de>
 
 	* tests/simulate/other/progtype-3.c (s): Initialize progmem
