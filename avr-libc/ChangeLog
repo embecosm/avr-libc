@@ -4,6 +4,14 @@
 	* include/avr/boot.h: Don't evaluate SPMCR if SPMCSR was
 	already around.
 
+2013-05-26  Joern Rennecke <joern.rennecke@embecosm.com>
+
+	* include/stdint.h [!__USING_MINT8] (UINT8_MAX): Provide (signed)
+	int value.
+	(SIZE_MAX): Define as UINT16_MAX.
+	[!WCHAR_MAX] (WCHAR_MAX, WCHAR_MIN): Define.
+	[!WINT_MAX] (WINT_MAX, WINT_MIN): Define.
+
 2013-05-24  Joern Rennecke <joern.rennecke@embecosm.com>
 
 	* include/stdint.h (INT8_C): Also define for __cplusplus >= 201103L.
