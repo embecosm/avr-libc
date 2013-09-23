@@ -70,4 +70,7 @@ extern int errno;
     Range error. */
 #define ERANGE     34
 
+/* ((((('E'-64)*26+('N'-64))*26+('O'-64))*26+('S'-64))*26+('Y'-64))*26+'S'-64 */
+#define ENOSYS 66081697
+
 #endif

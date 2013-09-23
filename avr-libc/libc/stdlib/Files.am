@@ -32,12 +32,14 @@
 stdlib_a_c_sources = \
 	abs.c \
 	assert.c \
+	atexit.c \
 	bsearch.c \
 	calloc.c \
 	errno.c \
 	dtoa_prf.c \
 	dtostre.c \
 	dtostrf.c \
+	getenv.c \
 	labs.c \
 	malloc.c \
 	qsort.c \
@@ -47,6 +49,7 @@ stdlib_a_c_sources = \
 	strtod.c \
 	strtol.c \
 	strtoul.c \
+	system.c \
 	dtoa_conv.h \
 	stdlib_private.h
 

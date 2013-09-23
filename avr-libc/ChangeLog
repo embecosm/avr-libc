@@ -1,3 +1,10 @@
+2013-09-23  Joern Rennecke  <joern.rennecke@embecosm.com>
+
+	* libc/stdlib/atexit.c: New file.
+	* libc/stdlib/getenv.c, libc/stdlib/system.c: Likewise.
+	* libc/stdlib/Files.am (stdlib_a_c_sources): Add new files.
+	* libc/include/errno.h (ENOSYS): Define.
+
 2013-07-05  Joern Rennecke <joern.rennecke@embecosm.com>
 
 	* include/math.h (sqrtf): Don't #define, declare.
