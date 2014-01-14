@@ -5,6 +5,11 @@
 	* libc/stdlib/Files.am (stdlib_a_c_sources): Add new files.
 	* libc/include/errno.h (ENOSYS): Define.
 
+2013-09-09  Joerg Wunsch <j.gnu@uriah.heep.sax.de>
+
+	* include/avr/xmega.h (_PROTECTED_WRITE): add forgotten
+	leading underscore.
+
 2013-07-05  Joern Rennecke <joern.rennecke@embecosm.com>
 
 	* include/math.h (sqrtf): Don't #define, declare.
