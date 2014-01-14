@@ -1,0 +1,22 @@
+# Editor backup files
+*~
+# Generated files
+config.log
+Makefile.in
+Makefile
+aclocal.m4
+autom4te.cache
+avr-libc.spec
+config.guess
+config.h
+config.h.in
+config.status
+config.sub
+configure
+depcomp
+install-sh
+missing
+avr-man
+stamp-h1
+builtins.h
+version.h
