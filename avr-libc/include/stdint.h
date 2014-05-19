@@ -1,6 +1,7 @@
 /* Copyright (c) 2002,2004,2005 Marek Michalkiewicz
    Copyright (c) 2005, Carlos Lamas
    Copyright (c) 2005,2007 Joerg Wunsch
+   Copyright (c) 2013 Embecosm
    All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
