@@ -33,7 +33,7 @@
 #include <stdio.h>
 #include "sectionname.h"
 
-ATTRIBUTE_CLIB_SECTION
+__attribute__((section(".text.stdio.fprintf.1")))
 int
 fprintf(FILE *stream, const char *fmt, ...)
 {

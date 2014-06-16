@@ -1,3 +1,20 @@
+2014-06-12  Joern Rennecke  <joern.rennecke@embecosm.com>
+
+	* libc/stdio/fprintf_i.S, libc/stdio/fscanf_i.S: New files.
+	* libc/stdio/printf_i.S, libc/stdio/scanf_i.S: Likewise.
+	* libc/stdio/snprintf_i.S, libc/stdio/sprintf_i.S: Likewise.
+	* libc/stdio/sscanf_i.S: Likewise.
+	* libc/stdio/Files.am (stdio_a_asm_sources): Add  printf_i.S,
+	fprintf_i.S, sprintf_i.S, snprintf_i.S, scanf_i.S, fscanf_i.S
+	and sscanf_i.S .
+	* libc/stdio/Rules.am (libprintf_flt_a_LIBADD): Add printf.o,
+	fprintf.o, sprintf.o and snprintf.o .
+	(libscanf_flt_a_LIBADD): Add scanf.o, fscanf.o and sscanf.o .
+	* libc/stdio/fprintf.c: Change section to .text.stdio.fprintf.1.
+	* libc/stdio/printf.c: Change section to .text.stdio.printf.1.
+	* libc/stdio/snprintf.c: Change section to .text.stdio.snprintf.1.
+	* libc/stdio/sprintf.c: Change section to .text.stdio.sprintf.1.
+
 2014-05-02  Pieter Agten  <pieter.agten@gmail.com>
 
 	* include/avr/iom328p.h (EFUSE_DEFAULT): update default value.

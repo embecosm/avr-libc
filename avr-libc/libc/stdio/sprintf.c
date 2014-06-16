@@ -35,7 +35,7 @@
 #include "sectionname.h"
 #include "stdio_private.h"
 
-ATTRIBUTE_CLIB_SECTION
+__attribute__((section(".text.stdio.sprintf.1")))
 int
 sprintf(char *s, const char *fmt, ...)
 {

@@ -34,7 +34,7 @@
 #include <stdio.h>
 #include "sectionname.h"
 
-ATTRIBUTE_CLIB_SECTION
+__attribute__((section(".text.stdio.snprintf.1")))
 int
 snprintf(char *s, size_t n, const char *fmt, ...)
 {

@@ -75,7 +75,14 @@ stdio_a_c_sources =	\
 stdio_a_asm_sources = \
 	getc.S \
 	putc.S \
-	ultoa_invert.S
+	ultoa_invert.S \
+	printf_i.S \
+	fprintf_i.S \
+	sprintf_i.S \
+	snprintf_i.S \
+	scanf_i.S \
+	fscanf_i.S \
+	sscanf_i.S
 
 stdio_a_extra_dist = \
 	vfprintf.c \
