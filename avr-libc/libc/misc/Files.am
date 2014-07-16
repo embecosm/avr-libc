@@ -38,14 +38,14 @@ eeprom_asm_sources = \
 	eerd_word.S \
 	eeupd_block.S \
 	eeupd_byte.S \
-	eeupd_dword.S \
-	eeupd_word.S \
 	eewr_block.S \
-	eewr_byte.S \
-	eewr_dword.S \
-	eewr_word.S
+	eewr_byte.S
 
 misc_a_asm_sources = \
+	eeupd_dword.S \
+	eeupd_word.S \
+	eewr_dword.S \
+	eewr_word.S \
 	itoa.S \
 	itoa_ncheck.S \
 	ltoa.S \

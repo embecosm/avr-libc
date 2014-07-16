@@ -29,17 +29,26 @@
 #
 
 AVR_TARGET          = <<dev>>
+AVR_FAMILY          = <<arch>>
 AVR_TARGET_CRT      = <<crt>>
 AVR_TARGET_DEFS     = <<crt_defs>>
 AVR_TARGET_CFLAGS   = <<crt_cflags>>
 AVR_TARGET_ASFLAGS  = <<crt_asflags>>
 AVR_INSTALL_DIR     = <<install_dir>>
 
-VPATH = $(top_srcdir)/crt1
+VPATH = $(top_srcdir)/crt1:$(top_srcdir)/libc/misc
+
+include $(top_srcdir)/libc/misc/Rules.am
 
 if HAS_<<dev>>
 
 AM_CPPFLAGS = -I$(top_srcdir)/common -I$(top_srcdir)/include -I$(top_builddir)/include
+
+# If we require gcc only to know the family, we can compile new devices with
+# an older compiler.  However, this doesn't work for the legacy devices
+# with an irregular include file mapping in io.h
+#AVRLIB_CFLAGS = @CDEBUG@ -Wall -W -Wstrict-prototypes -mmcu=$(AVR_FAMILY) -D__AVR_DEV_LIB_NAME__=$(AVR_TARGET) $(AVR_TARGET_DEFS) $(AVR_TARGET_CFLAGS)
+#AVRLIB_ASFLAGS = -x assembler-with-cpp @ASDEBUG@ -mmcu=$(AVR_FAMILY) -D__AVR_DEV_LIB_NAME__=$(AVR_TARGET) $(AVR_TARGET_DEFS) -DIOSYMFILE=\"iosym/$(AVR_TARGET).S\" $(AVR_TARGET_ASFLAGS)
 
 AVRLIB_CFLAGS = @CDEBUG@ -Wall -W -Wstrict-prototypes -mmcu=$(AVR_TARGET) $(AVR_TARGET_DEFS) $(AVR_TARGET_CFLAGS)
 
@@ -56,6 +65,8 @@ avrlibdir = $(__install_dir)
 
 noinst_LIBRARIES = libcrt.a
 nodist_libcrt_a_SOURCES = gcrt1.S
+avr_LIBRARIES = libdev.a
+libdev_a_SOURCES = $(eeprom_asm_sources)
 
 avr_DATA = $(AVR_TARGET_CRT)
 

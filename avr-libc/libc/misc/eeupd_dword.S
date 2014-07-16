@@ -32,7 +32,7 @@
 
 #include <avr/io.h>
 
-#if	E2END && __AVR_ARCH__ > 1
+#if	__AVR_ARCH__ > 1
 
 #include <avr/eeprom.h>
 #include "asmdef.h"
@@ -56,5 +56,5 @@ ENTRY	eeprom_update_float
 
 ENDFUNC
 
-#endif	/* E2END && __AVR_ARCH__ > 1 */
+#endif	__AVR_ARCH__ > 1 */
 #endif	/* !__DOXYGEN__ */
