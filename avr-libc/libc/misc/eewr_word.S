@@ -49,5 +49,5 @@ ENTRY	eeprom_write_word
 
 ENDFUNC
 
-#endif	__AVR_ARCH__ > 1 */
+#endif	/* __AVR_ARCH__ > 1 */
 #endif	/* !__DOXYGEN__ */

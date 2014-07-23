@@ -1,3 +1,9 @@
+2014-07-23  Joern Rennecke  <joern.rennecke@embecosm.com>
+
+	* libc/misc/eeupd_dword.S: Fix comment start for conditional end.
+	* libc/misc/eeupd_word.S: Likewise,
+	* libc/misc/eewr_dword.S, libc/misc/eewr_word.S: Likewise,
+
 2014-07-16  Joern Rennecke  <joern.rennecke@embecosm.com>
 
 	* configure.ac: (AC_CONFIG_FILES): Place all devices under avr/lib/dev.
