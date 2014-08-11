@@ -162,6 +162,7 @@
 /* Define set_sleep_mode() and sleep mode values per device. */
 #if defined(__AVR_ATmega161__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-1.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_PWR_DOWN     1
     #define SLEEP_MODE_PWR_SAVE     2
@@ -176,6 +177,7 @@
 #elif defined(__AVR_ATmega162__) \
 || defined(__AVR_ATmega8515__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-2.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_PWR_DOWN     1
     #define SLEEP_MODE_PWR_SAVE     2
@@ -201,6 +203,7 @@
 || defined(__AVR_AT90S8515__) \
 || defined(__AVR_ATtiny22__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-3.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_PWR_DOWN     _BV(SM)
 
@@ -213,6 +216,7 @@
 || defined(__AVR_ATtiny87__) \
 || defined(__AVR_ATtiny828__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-4.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_ADC          _BV(SM0)
     #define SLEEP_MODE_PWR_DOWN     _BV(SM1)
@@ -249,6 +253,7 @@
 || defined(__AVR_ATtiny85__) \
 || defined(__AVR_ATtiny88__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_ADC          _BV(SM0)
     #define SLEEP_MODE_PWR_DOWN     _BV(SM1)
@@ -263,6 +268,7 @@
 || defined(__AVR_ATtiny2313A__) \
 || defined(__AVR_ATtiny4313__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-6.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_PWR_DOWN     (_BV(SM0) | _BV(SM1))
     #define SLEEP_MODE_STANDBY      _BV(SM1)
@@ -274,6 +280,7 @@
 
 #elif defined(__AVR_AT94K__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-7.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_PWR_DOWN     _BV(SM1)
     #define SLEEP_MODE_PWR_SAVE     (_BV(SM0) | _BV(SM1))
@@ -293,6 +300,7 @@
 || defined(__AVR_ATtiny43U__) \
 || defined(__AVR_ATtiny1634__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-8.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_ADC          _BV(SM0)
     #define SLEEP_MODE_PWR_DOWN     _BV(SM1)
@@ -308,6 +316,7 @@
 || defined(__AVR_AT90PWM161__) \
 || defined(__AVR_AT90PWM81__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-9.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_ADC          _BV(SM0)
     #define SLEEP_MODE_PWR_DOWN     _BV(SM1)
@@ -436,6 +445,7 @@
 || defined(__AVR_ATmega8U2__)
 
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
     #define SLEEP_MODE_IDLE         (0)
     #define SLEEP_MODE_ADC          _BV(SM0)
     #define SLEEP_MODE_PWR_DOWN     _BV(SM1)
@@ -490,6 +500,7 @@
 || defined(__AVR_ATxmega384C3__) \
 || defined(__AVR_ATxmega384D3__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-11.h>
     #define SLEEP_MODE_IDLE         (0)
     #define SLEEP_MODE_PWR_DOWN     (SLEEP_SMODE1_bm)
     #define SLEEP_MODE_PWR_SAVE     (SLEEP_SMODE1_bm | SLEEP_SMODE0_bm)
@@ -503,6 +514,7 @@
 
 #elif defined(__AVR_AT90SCR100__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-12.h>
     #define SLEEP_MODE_IDLE         (0)
     #define SLEEP_MODE_PWR_DOWN     _BV(SM1)
     #define SLEEP_MODE_PWR_SAVE     (_BV(SM0) | _BV(SM1))
@@ -518,6 +530,7 @@
 || defined(__AVR_ATA6286__) \
 || defined(__AVR_ATA6289__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-13.h>
     #define SLEEP_MODE_IDLE                     (0)
     #define SLEEP_MODE_SENSOR_NOISE_REDUCTION   (_BV(SM0))
     #define SLEEP_MODE_PWR_DOWN                 (_BV(SM1))
@@ -530,6 +543,7 @@
 #elif defined (__AVR_ATA5790__) \
 || defined (__AVR_ATA5795__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-14.h>
     #define SLEEP_MODE_IDLE           (0)
     #define SLEEP_MODE_EXT_PWR_SAVE   (_BV(SM0))
     #define SLEEP_MODE_PWR_DOWN       (_BV(SM1))
@@ -547,6 +561,7 @@
 || defined(__AVR_ATtiny20__) \
 || defined(__AVR_ATtiny40__)
 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-15.h>
     #define SLEEP_MODE_IDLE         0
     #define SLEEP_MODE_ADC          _BV(SM0)
     #define SLEEP_MODE_PWR_DOWN     _BV(SM1)

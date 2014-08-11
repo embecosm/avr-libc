@@ -172,6 +172,7 @@
 || defined(__AVR_ATxmega384C3__) \
 || defined(__AVR_ATxmega384D3__)
 
+#define __AVR_HAVE_WDT_ENABLE_1STS
 /*
     wdt_enable(WDT_PER_8KCLK_gc);
 */
@@ -323,6 +324,7 @@ __asm__ __volatile__ ( \
 || defined(__AVR_ATA5790__) \
 || defined(__AVR_ATA5795__)
 
+#define __AVR_HAVE_WDT_ENABLE_2STS
 /* Use STS instruction. */
  
 #define wdt_enable(value)   \
@@ -362,6 +364,7 @@ __asm__ __volatile__ (  \
 || defined(__AVR_ATtiny20__) \
 || defined(__AVR_ATtiny40__) 
 
+#define __AVR_HAVE_WDT_ENABLE_OUT1
 #define wdt_enable(value) \
 __asm__ __volatile__ ( \
     "in __tmp_reg__,__SREG__" "\n\t"  \

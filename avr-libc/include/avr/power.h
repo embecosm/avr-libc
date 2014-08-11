@@ -662,6 +662,8 @@ the clock below 131.072 kHz.
 || defined(__AVR_ATxmega384C3__)
 
 
+#define __AVR_HAVE_USART1_DEF
+
 #define power_aes_enable()  (PR_PRGEN &= (uint8_t)~(PR_AES_bm))
 #define power_aes_disable() (PR_PRGEN |= (uint8_t)PR_AES_bm)
 
@@ -768,6 +770,7 @@ do { \
 
 #define power_twic_enable()     (PR_PRPC &= (uint8_t)~(PR_TWI_bm))
 #define power_twic_disable()    (PR_PRPC |= (uint8_t)PR_TWI_bm)
+#define __AVR_HAVE_TWI_E
 #define power_twie_enable()     (PR_PRPE &= (uint8_t)~(PR_TWI_bm))
 #define power_twie_disable()    (PR_PRPE |= (uint8_t)PR_TWI_bm)
 
@@ -782,6 +785,7 @@ do { \
 
 #define power_spic_enable()     (PR_PRPC &= (uint8_t)~(PR_SPI_bm))
 #define power_spic_disable()    (PR_PRPC |= (uint8_t)PR_SPI_bm)
+#define __AVR_HAVE_SPI_D
 #define power_spid_enable()     (PR_PRPD &= (uint8_t)~(PR_SPI_bm))
 #define power_spid_disable()    (PR_PRPD |= (uint8_t)PR_SPI_bm)
 
@@ -852,6 +856,7 @@ do { \
 
 #define power_twic_enable()     (PR_PRPC &= (uint8_t)~(PR_TWI_bm))
 #define power_twic_disable()    (PR_PRPC |= (uint8_t)PR_TWI_bm)
+#define __AVR_HAVE_TWI_E
 #define power_twie_enable()     (PR_PRPE &= (uint8_t)~(PR_TWI_bm))
 #define power_twie_disable()    (PR_PRPE |= (uint8_t)PR_TWI_bm)
 
@@ -869,6 +874,7 @@ do { \
 
 #define power_spic_enable()     (PR_PRPC &= (uint8_t)~(PR_SPI_bm))
 #define power_spic_disable()    (PR_PRPC |= (uint8_t)PR_SPI_bm)
+#define __AVR_HAVE_SPI_D
 #define power_spid_enable()     (PR_PRPD &= (uint8_t)~(PR_SPI_bm))
 #define power_spid_disable()    (PR_PRPD |= (uint8_t)PR_SPI_bm)
 
@@ -952,8 +958,10 @@ do { \
 
 #define power_twic_enable()     (PR_PRPC &= (uint8_t)~(PR_TWI_bm))
 #define power_twic_disable()    (PR_PRPC |= (uint8_t)PR_TWI_bm)
+#define __AVR_HAVE_TWI_DF
 #define power_twid_enable()     (PR_PRPD &= (uint8_t)~(PR_TWI_bm))
 #define power_twid_disable()    (PR_PRPD |= (uint8_t)PR_TWI_bm)
+#define __AVR_HAVE_TWI_E
 #define power_twie_enable()     (PR_PRPE &= (uint8_t)~(PR_TWI_bm))
 #define power_twie_disable()    (PR_PRPE |= (uint8_t)PR_TWI_bm)
 #define power_twif_enable()     (PR_PRPF &= (uint8_t)~(PR_TWI_bm))
@@ -970,8 +978,10 @@ do { \
 
 #define power_spic_enable()     (PR_PRPC &= (uint8_t)~(PR_SPI_bm))
 #define power_spic_disable()    (PR_PRPC |= (uint8_t)PR_SPI_bm)
+#define __AVR_HAVE_SPI_D
 #define power_spid_enable()     (PR_PRPD &= (uint8_t)~(PR_SPI_bm))
 #define power_spid_disable()    (PR_PRPD |= (uint8_t)PR_SPI_bm)
+#define __AVR_HAVE_SPI_EF
 #define power_spie_enable()     (PR_PRPE &= (uint8_t)~(PR_SPI_bm))
 #define power_spie_disable()    (PR_PRPE |= (uint8_t)PR_SPI_bm)
 #define power_spif_enable()     (PR_PRPF &= (uint8_t)~(PR_SPI_bm))
@@ -979,6 +989,7 @@ do { \
 
 #define power_hiresc_enable()   (PR_PRPC &= (uint8_t)~(PR_HIRES_bm))
 #define power_hiresc_disable()  (PR_PRPC |= (uint8_t)PR_HIRES_bm)
+#define __AVR_HAVE_HIRES_DEF
 #define power_hiresd_enable()   (PR_PRPD &= (uint8_t)~(PR_HIRES_bm))
 #define power_hiresd_disable()  (PR_PRPD |= (uint8_t)PR_HIRES_bm)
 #define power_hirese_enable()   (PR_PRPE &= (uint8_t)~(PR_HIRES_bm))
@@ -988,6 +999,7 @@ do { \
 
 #define power_tc1c_enable()     (PR_PRPC &= (uint8_t)~(PR_TC1_bm))
 #define power_tc1c_disable()    (PR_PRPC |= (uint8_t)PR_TC1_bm)
+#define __AVR_HAVE_TC1_DEF
 #define power_tc1d_enable()     (PR_PRPD &= (uint8_t)~(PR_TC1_bm))
 #define power_tc1d_disable()    (PR_PRPD |= (uint8_t)PR_TC1_bm)
 #define power_tc1e_enable()     (PR_PRPE &= (uint8_t)~(PR_TC1_bm))
@@ -1023,6 +1035,7 @@ do { \
 
 #define power_twic_enable()     (PR_PRPC &= (uint8_t)~(PR_TWI_bm))
 #define power_twic_disable()    (PR_PRPC |= (uint8_t)PR_TWI_bm)
+#define __AVR_HAVE_TWI_E
 #define power_twie_enable()     (PR_PRPE &= (uint8_t)~(PR_TWI_bm))
 #define power_twie_disable()    (PR_PRPE |= (uint8_t)PR_TWI_bm)
 
@@ -1037,6 +1050,7 @@ do { \
 
 #define power_spic_enable()     (PR_PRPC &= (uint8_t)~(PR_SPI_bm))
 #define power_spic_disable()    (PR_PRPC |= (uint8_t)PR_SPI_bm)
+#define __AVR_HAVE_SPI_D
 #define power_spid_enable()     (PR_PRPD &= (uint8_t)~(PR_SPI_bm))
 #define power_spid_disable()    (PR_PRPD |= (uint8_t)PR_SPI_bm)
 
@@ -1211,6 +1225,7 @@ do { \
 #define power_usart0_enable()   (PRR0 &= (uint8_t)~(1 << PRUSART0))
 #define power_usart0_disable()  (PRR0 |= (uint8_t)(1 << PRUSART0))
 
+#define __AVR_HAVE_PRR1_USART1
 #define power_usart1_enable()   (PRR1 &= (uint8_t)~(1 << PRUSART1))
 #define power_usart1_disable()  (PRR1 |= (uint8_t)(1 << PRUSART1))
 
@@ -1265,6 +1280,7 @@ do{ \
 #define power_usart0_enable()   (PRR0 &= (uint8_t)~(1 << PRUSART0))
 #define power_usart0_disable()  (PRR0 |= (uint8_t)(1 << PRUSART0))
 
+#define __AVR_HAVE_PRR1_USART1
 #define power_usart1_enable()   (PRR1 &= (uint8_t)~(1 << PRUSART1))
 #define power_usart1_disable()  (PRR1 |= (uint8_t)(1 << PRUSART1))
 
@@ -1311,6 +1327,7 @@ do{ \
 #define power_twi_enable()           (PRR0 &= (uint8_t)~(1 << PRTWI))
 #define power_twi_disable()          (PRR0 |= (uint8_t)(1 << PRTWI))
 
+#define __AVR_HAVE_PRR1_USART1
 #define power_usart1_enable()        (PRR1 &= (uint8_t)~(1 << PRUSART1))
 #define power_usart1_disable()       (PRR1 |= (uint8_t)(1 << PRUSART1))
 
@@ -1378,6 +1395,7 @@ do{ \
 #define power_timer3_enable()   (PRR1 &= (uint8_t)~(1 << PRTIM3))
 #define power_timer3_disable()  (PRR1 |= (uint8_t)(1 << PRTIM3))
 
+#define __AVR_HAVE_PRR1_USART1
 #define power_usart1_enable()   (PRR1 &= (uint8_t)~(1 << PRUSART1))
 #define power_usart1_disable()  (PRR1 |= (uint8_t)(1 << PRUSART1))
 
@@ -1425,6 +1443,7 @@ do{ \
 #define power_timer3_enable()   (PRR1 &= (uint8_t)~(1 << PRTIM3))
 #define power_timer3_disable()  (PRR1 |= (uint8_t)(1 << PRTIM3))
 
+#define __AVR_HAVE_PRR1_USART1
 #define power_usart1_enable()   (PRR1 &= (uint8_t)~(1 << PRUSART1))
 #define power_usart1_disable()  (PRR1 |= (uint8_t)(1 << PRUSART1))
 
@@ -1468,6 +1487,7 @@ do{ \
 #define power_timer3_enable()   (PRR1 &= (uint8_t)~(1 << PRTIM3))
 #define power_timer3_disable()  (PRR1 |= (uint8_t)(1 << PRTIM3))
 
+#define __AVR_HAVE_PRR1_USART1
 #define power_usart1_enable()   (PRR1 &= (uint8_t)~(1 << PRUSART1))
 #define power_usart1_disable()  (PRR1 |= (uint8_t)(1 << PRUSART1))
 
@@ -1668,6 +1688,7 @@ do{ \
 #define power_usart0_enable()   (PRR0 &= (uint8_t)~(1 << PRUSART0))
 #define power_usart0_disable()  (PRR0 |= (uint8_t)(1 << PRUSART0))
 
+#define __AVR_HAVE_PRR0_USART1
 #define power_usart1_enable()   (PRR0 &= (uint8_t)~(1 << PRUSART1))
 #define power_usart1_disable()  (PRR0 |= (uint8_t)(1 << PRUSART1))
 
@@ -1887,6 +1908,7 @@ do{ \
 #define power_usart0_enable()   (PRR0 &= (uint8_t)~(1 << PRUSART0))
 #define power_usart0_disable()  (PRR0 |= (uint8_t)(1 << PRUSART0))
 
+#define __AVR_HAVE_PRR0_USART1
 #define power_usart1_enable()   (PRR0 &= (uint8_t)~(1 << PRUSART1))
 #define power_usart1_disable()  (PRR0 |= (uint8_t)(1 << PRUSART1))
 
@@ -2099,6 +2121,7 @@ do{ \
 #define power_usb_enable()      (PRR1 &= (uint8_t)~(1 << PRUSB))
 #define power_usb_disable()     (PRR1 |= (uint8_t)(1 << PRUSB))
 
+#define __AVR_HAVE_PRR1_USART1
 #define power_usart1_enable()   (PRR1 &= (uint8_t)~(1 << PRUSART1))
 #define power_usart1_disable()  (PRR1 |= (uint8_t)(1 << PRUSART1))
 
@@ -2309,6 +2332,7 @@ do{ \
 || defined(__DOXYGEN__)
 
 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-1.h>
 /** \addtogroup avr_power
 
 Some of the newer AVRs contain a System Clock Prescale Register (CLKPR) that
@@ -2380,6 +2404,7 @@ typedef enum
 || defined(__AVR_ATmega256RFR2__) \
 || defined(__AVR_ATmega128RFR2__) \
 || defined(__AVR_ATmega64RFR2__)
+#define __AVR_HAVE_CLOCK_DIV_1_RC
     , clock_div_1_rc = 15
 #endif
 } clock_div_t;
@@ -2431,6 +2456,7 @@ called with a value other than those defined by \c clock_div_t.
 || defined(__AVR_ATmega32HVB__) \
 || defined(__AVR_ATmega32HVBREVB__)
 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-2.h>
 typedef enum
 {
     clock_div_1 = 0,
@@ -2462,6 +2488,7 @@ void clock_prescale_set(clock_div_t __x)
 #elif defined(__AVR_ATA5790__) \
 || defined (__AVR_ATA5795__)
 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-3.h>
 typedef enum
 {
     clock_div_1 = 0,
@@ -2535,6 +2562,7 @@ void timer_clock_prescale_set(timer_clock_div_t __x)
 #elif defined(__AVR_ATA6285__) \
 || defined(__AVR_ATA6286__)
 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-4.h>
 typedef enum
 {
     clock_div_1 = 0,
@@ -2633,6 +2661,7 @@ void timer_clock_prescale_set(timer_clock_div_t __x)
 || defined(__AVR_ATtiny13A__) \
 || defined(__AVR_ATtiny43U__) \
 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-5.h>
 typedef enum
 {
     clock_div_1 = 0,
@@ -2671,6 +2700,7 @@ void clock_prescale_set(clock_div_t __x)
 || defined(__AVR_ATmega103__) \
 || defined(__AVR_ATmega128__)
 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-6.h>
 //Enum is declared for code compatibility
 typedef enum
 {
@@ -2761,6 +2791,7 @@ clock_div_t clock_prescale_get(void)
 || defined(__AVR_ATtiny20__) \
 || defined(__AVR_ATtiny40__) \
 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-7.h>
 typedef enum 
 { 
     clock_div_1 = 0, 
