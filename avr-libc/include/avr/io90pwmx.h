@@ -1396,4 +1396,12 @@
 #define __BOOT_LOCK_BITS_1_EXIST 
 
 
+/* __AVR_AT90PWM2__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-1.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
+/* __AVR_AT90PWM3__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-1.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 #endif /* _AVR_IO90PWMX_H_ */

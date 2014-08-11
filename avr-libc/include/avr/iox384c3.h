@@ -6777,4 +6777,14 @@ IO Module Instances. Mapped to memory.
 
 
 #endif /* #ifdef _AVR_ATXMEGA384C3_H_INCLUDED */
+/* __AVR_ATxmega384C3__ */
+#define __AVR_HAVE_HIRES_DEF 
+#define __AVR_HAVE_SPI_D 
+#define __AVR_HAVE_SPI_EF 
+#define __AVR_HAVE_TC1_DEF 
+#define __AVR_HAVE_TWI_DF 
+#define __AVR_HAVE_TWI_E 
+#define __AVR_HAVE_USART1_DEF 
+#define __AVR_HAVE_WDT_ENABLE_1STS 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-11.h>
 

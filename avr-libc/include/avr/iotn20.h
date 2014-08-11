@@ -761,4 +761,8 @@
 #define PCINT5_BIT   ADC5
 
 #endif /* _AVR_ATtiny20_H_ */
+/* __AVR_ATtiny20__ */
+#define __AVR_HAVE_WDT_ENABLE_OUT1 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-7.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-15.h>
 

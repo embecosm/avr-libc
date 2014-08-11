@@ -91,4 +91,8 @@
 #define SIGNATURE_2 0x81
 
 
+/* __AVR_AT90CAN64__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-1.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 #endif  /* _AVR_IOCAN64_H_ */

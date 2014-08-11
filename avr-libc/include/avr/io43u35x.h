@@ -425,4 +425,6 @@
 #define    E2END    0x0000
 #define    FLASHEND 0x5FFF
 
+/* __AVR_AT43USB355__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-3.h>
 #endif /* _AVR_43USB355_H_ */

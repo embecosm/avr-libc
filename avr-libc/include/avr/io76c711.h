@@ -490,4 +490,6 @@
    0x8000 - 0xBFFF - program SRAM (read/write), would be nice if other
                      AVR devices did that as well (no need to use LPM!)
  */
+/* __AVR_AT76C711__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
 #endif /* _AVR_IO76C711_H_ */

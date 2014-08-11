@@ -831,4 +831,8 @@
 
 
 #endif /* #ifdef _AVR_ATA5790_H_INCLUDED */
+/* __AVR_ATA5790__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-3.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-14.h>
 

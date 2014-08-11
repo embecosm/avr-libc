@@ -6333,4 +6333,10 @@ struct __reg_TST_SDM {
 #define SIGNATURE_1 0xA7
 #define SIGNATURE_2 0x02
 
+/* __AVR_ATmega128RFR2__ */
+#define __AVR_HAVE_CLOCK_DIV_1_RC 
+#define __AVR_HAVE_PRR1_USART1 
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-1.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 #endif /* _AVR_IOM128RFR2_H_ */

@@ -841,4 +841,7 @@
 
 
 #endif /* _AVR_ATA6289_H_ */
+/* __AVR_ATA6289__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-13.h>
 

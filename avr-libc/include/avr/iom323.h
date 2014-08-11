@@ -734,4 +734,6 @@
 
 
 
+/* __AVR_ATmega323__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 #endif /* _AVR_IOM323_H_ */

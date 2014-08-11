@@ -913,4 +913,6 @@
 #define SS_BIT   4
 
 #endif /* _AVR_ATmega16A_H_ */
+/* __AVR_ATmega16A__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 

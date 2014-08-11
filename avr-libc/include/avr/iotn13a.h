@@ -381,4 +381,7 @@
 
 
 #endif /* _AVR_ATTINY13A_H_ */
+/* __AVR_ATtiny13A__ */
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-5.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
 

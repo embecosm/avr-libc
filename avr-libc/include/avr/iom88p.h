@@ -921,4 +921,8 @@
 #define SIGNATURE_2 0x0F
 
 
+/* __AVR_ATmega88P__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-1.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 #endif  /* _AVR_IOM88P_H_ */

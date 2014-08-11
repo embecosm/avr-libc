@@ -868,4 +868,7 @@
 #define OC_BIT   OC
 
 #endif /* _AVR_ATmega16HVA2_H_ */
+/* __AVR_ATmega16HVA2__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 

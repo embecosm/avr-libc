@@ -763,4 +763,6 @@
 
 
 
+/* __AVR_ATmega8535__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 #endif /* _AVR_IOM8535_H_ */

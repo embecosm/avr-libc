@@ -799,4 +799,7 @@
 #define SCL_BIT   7
 
 #endif /* _AVR_ATtiny4313_H_ */
+/* __AVR_ATtiny4313__ */
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-5.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-6.h>
 

@@ -1017,4 +1017,7 @@
 #define OC_BIT   OC
 
 #endif /* _AVR_ATmega64HVE_H_ */
+/* __AVR_ATmega64HVE__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 

@@ -719,4 +719,6 @@
 #endif  /* !defined(__AVR_LIBC_DEPRECATED_ENABLE__) */
 
 
+/* __AVR_ATmega161__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-1.h>
 #endif /* _AVR_IOM161_H_ */

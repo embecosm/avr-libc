@@ -87,4 +87,7 @@
 #define SIGNATURE_2 0x0C
 
 
+/* __AVR_ATtiny84__ */
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-5.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
 #endif /* _AVR_IOTN84_H_ */

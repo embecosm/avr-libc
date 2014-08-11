@@ -6027,4 +6027,9 @@ IO Module Instances. Mapped to memory.
 
 
 #endif /* #ifdef _AVR_ATXMEGA32C4_H_INCLUDED */
+/* __AVR_ATxmega32C4__ */
+#define __AVR_HAVE_SPI_D 
+#define __AVR_HAVE_TWI_E 
+#define __AVR_HAVE_WDT_ENABLE_1STS 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-11.h>
 

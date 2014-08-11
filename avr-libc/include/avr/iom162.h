@@ -1012,4 +1012,7 @@
 #endif  /* !defined(__AVR_LIBC_DEPRECATED_ENABLE__) */
 
 
+/* __AVR_ATmega162__ */
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-1.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-2.h>
 #endif  /* _AVR_IOM162_H_ */

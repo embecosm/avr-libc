@@ -554,4 +554,6 @@
 #define FLASHEND 0x7FFF
 #endif
 
+/* __AVR_AT94K__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-7.h>
 #endif /* _AVR_IOAT94K_H_ */

@@ -768,4 +768,7 @@
 #define SIGNATURE_2 0x07
 
 
+/* __AVR_ATmega406__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 #endif /* _AVR_IOM406_H_ */

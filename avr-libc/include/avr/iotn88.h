@@ -792,4 +792,7 @@
 #define SIGNATURE_2 0x11
 
 
+/* __AVR_ATtiny88__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
 #endif /* _AVR_IOTN88_H_ */

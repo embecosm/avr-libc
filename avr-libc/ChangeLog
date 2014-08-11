@@ -1,3 +1,22 @@
+2014-08-11  Joern Rennecke  <joern.rennecke@embecosm.com>
+
+	* include/avr/wdt.h, include/avr/power.h, include/avr/sleep.h:
+	Use new and old macros to allow for new devices.
+	* include/avr/power-clkpr-1.h, include/avr/power-clkpr-2.h: New files.
+	* include/avr/power-clkpr-3.h, include/avr/power-clkpr-4.h: Likewise.
+	* include/avr/power-clkpr-5.h, include/avr/power-clkpr-6.h: Likewise.
+	* include/avr/power-clkpr-7.h: Likewise.
+	* include/avr/sleep-1.h, include/avr/sleep-2.h: Likewise.
+	* include/avr/sleep-3.h, include/avr/sleep-4.h: Likewise.
+	* include/avr/sleep-5.h, include/avr/sleep-6.h: Likewise.
+	* include/avr/sleep-7.h, include/avr/sleep-8.h: Likewise.
+	* include/avr/sleep-9.h, include/avr/sleep-10.h: Likewise.
+	* include/avr/sleep-11.h, include/avr/sleep-12.h: Likewise.
+	* include/avr/sleep-13.h, include/avr/sleep-14.h: Likewise.
+	* include/avr/sleep-15.h: Likewise.
+	* include/avr/io?*.h: Apply changes generated with
+	gen-avr-have-xxx branch.
+
 2014-07-23  Joern Rennecke  <joern.rennecke@embecosm.com>
 
 	* libc/misc/eeupd_dword.S: Fix comment start for conditional end.

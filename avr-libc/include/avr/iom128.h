@@ -1290,4 +1290,7 @@
 
 
 
+/* __AVR_ATmega128__ */
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-6.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 #endif /* _AVR_IOM128_H_ */

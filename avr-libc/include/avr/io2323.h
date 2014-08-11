@@ -203,4 +203,6 @@
 #define SIGNATURE_0 0x1E
 #define SIGNATURE_1 0x91
 #define SIGNATURE_2 0x02
+/* __AVR_AT90S2323__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-3.h>
 

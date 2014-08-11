@@ -495,4 +495,6 @@
 #define SIGNATURE_2 0x01
 
 
+/* __AVR_AT90S8515__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-3.h>
 #endif /* _AVR_IO8515_H_ */

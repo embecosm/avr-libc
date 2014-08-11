@@ -852,4 +852,6 @@
 
 
 #endif /* #ifdef _AVR_ATTINY1634_H_INCLUDED */
+/* __AVR_ATtiny1634__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-8.h>
 

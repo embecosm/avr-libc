@@ -830,4 +830,7 @@
 #define PCINT5_BIT   5
 
 #endif /* _AVR_ATtiny44A_H_ */
+/* __AVR_ATtiny44A__ */
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-5.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
 

@@ -1036,4 +1036,8 @@
 #define OC_BIT   OC
 
 #endif /* _AVR_ATmega16HVB_H_ */
+/* __AVR_ATmega16HVB__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-2.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
 

@@ -433,4 +433,6 @@
    but no RAMPZ causes gcrt1.S build to fail, so assume 64K for now...  */
 #define    FLASHEND 0x0FFFF
 
+/* __AVR_AT43USB320__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-3.h>
 #endif /* _AVR_43USB32X_H_ */

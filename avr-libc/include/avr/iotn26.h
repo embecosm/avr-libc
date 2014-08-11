@@ -414,4 +414,6 @@
 #endif  /* !defined(__AVR_LIBC_DEPRECATED_ENABLE__) */
 
 
+/* __AVR_ATtiny26__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-8.h>
 #endif  /* _AVR_IOTN26_H_ */

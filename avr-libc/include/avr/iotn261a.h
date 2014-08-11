@@ -973,4 +973,7 @@
 #define PA0_BIT   ADC0
 
 #endif /* _AVR_ATtiny261A_H_ */
+/* __AVR_ATtiny261A__ */
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-5.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-8.h>
 

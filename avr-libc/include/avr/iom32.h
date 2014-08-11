@@ -746,4 +746,6 @@
 #endif  /* !defined(__AVR_LIBC_DEPRECATED_ENABLE__) */
 
 
+/* __AVR_ATmega32__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 #endif /* _AVR_IOM32_H_ */

@@ -87,4 +87,7 @@
 #define SIGNATURE_2 0x07
 
 
+/* __AVR_ATtiny44__ */
+#define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-5.h>
+#define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
 #endif /* _AVR_IOTN44_H_ */

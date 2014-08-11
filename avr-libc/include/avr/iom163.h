@@ -681,4 +681,6 @@
 
 
 
+/* __AVR_ATmega163__ */
+#define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
 #endif /* _AVR_IOM163_H_ */

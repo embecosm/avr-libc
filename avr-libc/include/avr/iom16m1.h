@@ -1554,4 +1554,7 @@
 
 
 #endif /* _AVR_ATmega16M1_H_ */
+/* __AVR_ATmega16M1__ */
+#define __AVR_HAVE_WDT_ENABLE_2STS 
+#define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 
