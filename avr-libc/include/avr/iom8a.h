@@ -558,8 +558,8 @@
 #define SIGNATURE_2 0x07
 
 
-#endif /* #ifdef _AVR_ATMEGA8A_H_INCLUDED */
 /* __AVR_ATmega8A__ */
 #define __AVR_HAVE_WDT_ENABLE_2STS 
 #define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 
+#endif /* #ifdef _AVR_ATMEGA8A_H_INCLUDED */

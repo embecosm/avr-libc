@@ -7236,7 +7236,6 @@ IO Module Instances. Mapped to memory.
 #define SIGNATURE_2 0x46
 
 
-#endif /* #ifdef _AVR_ATXMEGA128A4U_H_INCLUDED */
 /* __AVR_ATxmega128A4U__ */
 #define __AVR_HAVE_HIRES_DEF 
 #define __AVR_HAVE_SPI_D 
@@ -7248,3 +7247,4 @@ IO Module Instances. Mapped to memory.
 #define __AVR_HAVE_WDT_ENABLE_1STS 
 #define __AVR_SLEEP_HEADER__ <avr/sleep-11.h>
 
+#endif /* #ifdef _AVR_ATXMEGA128A4U_H_INCLUDED */

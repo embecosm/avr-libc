@@ -6243,8 +6243,8 @@ IO Module Instances. Mapped to memory.
 #define SIGNATURE_2 0x4B
 
 
-#endif /* #ifdef _AVR_ATXMEGA128B3_H_INCLUDED */
 /* __AVR_ATxmega128B3__ */
 #define __AVR_HAVE_WDT_ENABLE_1STS 
 #define __AVR_SLEEP_HEADER__ <avr/sleep-11.h>
 
+#endif /* #ifdef _AVR_ATXMEGA128B3_H_INCLUDED */

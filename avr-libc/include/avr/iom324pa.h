@@ -1351,9 +1351,9 @@
 #define PCINT12_PIN   PINB
 #define PCINT12_BIT   4
 
-#endif /* _AVR_ATmega324PA_H_ */
 /* __AVR_ATmega324PA__ */
 #define __AVR_HAVE_PRR0_USART1 
 #define __AVR_HAVE_WDT_ENABLE_2STS 
 #define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 
+#endif /* _AVR_ATmega324PA_H_ */

@@ -828,7 +828,7 @@
 #define SIGNATURE_2 0x14
 
 
-#endif /* #ifdef _AVR_ATTINY828_H_INCLUDED */
 /* __AVR_ATtiny828__ */
 #define __AVR_SLEEP_HEADER__ <avr/sleep-4.h>
 
+#endif /* #ifdef _AVR_ATTINY828_H_INCLUDED */

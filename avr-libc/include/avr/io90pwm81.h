@@ -1021,9 +1021,9 @@
 #define SIGNATURE_2 0x88
 
 
-#endif /* _AVR_AT90PWM81_H_ */
 /* __AVR_AT90PWM81__ */
 #define __AVR_HAVE_WDT_ENABLE_2STS 
 #define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-1.h>
 #define __AVR_SLEEP_HEADER__ <avr/sleep-9.h>
 
+#endif /* _AVR_AT90PWM81_H_ */

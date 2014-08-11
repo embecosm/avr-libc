@@ -798,8 +798,8 @@
 #define SCL_PIN   PINB
 #define SCL_BIT   7
 
-#endif /* _AVR_ATtiny2313A_H_ */
 /* __AVR_ATtiny2313A__ */
 #define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-5.h>
 #define __AVR_SLEEP_HEADER__ <avr/sleep-6.h>
 
+#endif /* _AVR_ATtiny2313A_H_ */

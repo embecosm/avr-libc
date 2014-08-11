@@ -1303,8 +1303,8 @@
 #define SIGNATURE_2 0x86
 
 
-#endif /* _AVR_ATmega64C1_H_ */
 /* __AVR_ATmega64C1__ */
 #define __AVR_HAVE_WDT_ENABLE_2STS 
 #define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 
+#endif /* _AVR_ATmega64C1_H_ */

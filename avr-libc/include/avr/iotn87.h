@@ -843,8 +843,8 @@
 #define SIGNATURE_2 0x87
 
 
-#endif /* _AVR_ATtiny87_H_ */
 /* __AVR_ATtiny87__ */
 #define __AVR_HAVE_WDT_ENABLE_2STS 
 #define __AVR_SLEEP_HEADER__ <avr/sleep-4.h>
 
+#endif /* _AVR_ATtiny87_H_ */

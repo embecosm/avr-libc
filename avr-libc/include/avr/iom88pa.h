@@ -1163,8 +1163,8 @@
 #define PCINT18_PIN   PIND
 #define PCINT18_BIT   2
 
-#endif /* _AVR_ATmega88PA_H_ */
 /* __AVR_ATmega88PA__ */
 #define __AVR_HAVE_WDT_ENABLE_2STS 
 #define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 
+#endif /* _AVR_ATmega88PA_H_ */

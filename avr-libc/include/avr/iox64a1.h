@@ -7163,7 +7163,6 @@ IO Module Instances. Mapped to memory.
 #define SIGNATURE_2 0x4E
 
 
-#endif /* _AVR_ATxmega64A1_H_ */
 /* __AVR_ATxmega64A1__ */
 #define __AVR_HAVE_HIRES_DEF 
 #define __AVR_HAVE_SPI_D 
@@ -7174,3 +7173,4 @@ IO Module Instances. Mapped to memory.
 #define __AVR_HAVE_USART1_DEF 
 #define __AVR_SLEEP_HEADER__ <avr/sleep-11.h>
 
+#endif /* _AVR_ATxmega64A1_H_ */

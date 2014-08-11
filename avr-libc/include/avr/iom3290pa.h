@@ -961,9 +961,9 @@
 #define SIGNATURE_2 0x0C
 
 
-#endif /* #ifdef _AVR_ATMEGA3290PA_H_INCLUDED */
 /* __AVR_ATmega3290PA__ */
 #define __AVR_HAVE_WDT_ENABLE_2STS 
 #define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-1.h>
 #define __AVR_SLEEP_HEADER__ <avr/sleep-10.h>
 
+#endif /* #ifdef _AVR_ATMEGA3290PA_H_INCLUDED */

@@ -831,8 +831,8 @@
 #define PCINT5_PIN   PINA
 #define PCINT5_BIT   5
 
-#endif /* _AVR_ATtiny24A_H_ */
 /* __AVR_ATtiny24A__ */
 #define __AVR_POWER_CLKPR_HEADER__ <avr/power-clkpr-5.h>
 #define __AVR_SLEEP_HEADER__ <avr/sleep-5.h>
 
+#endif /* _AVR_ATtiny24A_H_ */
