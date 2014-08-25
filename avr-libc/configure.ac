@@ -485,9 +485,6 @@ AM_CONDITIONAL(HAS_attiny26, true)
 CHECK_AVR_DEVICE(avr25)
 AM_CONDITIONAL(HAS_avr25, test "x$HAS_avr25" = "xyes")
 
-CHECK_AVR_DEVICE(ata6289)
-AM_CONDITIONAL(HAS_ata6289, test "x$HAS_ata6289" = "xyes")
-
 CHECK_AVR_DEVICE(ata5272)
 AM_CONDITIONAL(HAS_ata5272, test "x$HAS_ata5272" = "xyes")
 
@@ -623,6 +620,9 @@ AM_CONDITIONAL(HAS_ata6285, test "x$HAS_ata6285" = "xyes")
 
 CHECK_AVR_DEVICE(ata6286)
 AM_CONDITIONAL(HAS_ata6286, test "x$HAS_ata6286" = "xyes")
+
+CHECK_AVR_DEVICE(ata6289)
+AM_CONDITIONAL(HAS_ata6289, test "x$HAS_ata6289" = "xyes")
 
 CHECK_AVR_DEVICE(atmega8a)
 AM_CONDITIONAL(HAS_atmega8a, test "x$HAS_atmega8a" = "xyes")
@@ -1267,7 +1267,6 @@ AC_CONFIG_FILES([
 AC_CONFIG_FILES([
 	avr/lib/avr25/Makefile
 	avr/lib/dev/at86rf401/Makefile
-	avr/lib/dev/ata6289/Makefile
 	avr/lib/dev/ata5272/Makefile
 	avr/lib/dev/attiny13/Makefile
 	avr/lib/dev/attiny13a/Makefile
@@ -1348,6 +1347,7 @@ AC_CONFIG_FILES([
 	avr/lib/avr4/Makefile
 	avr/lib/dev/ata6285/Makefile
 	avr/lib/dev/ata6286/Makefile
+	avr/lib/dev/ata6289/Makefile
 	avr/lib/dev/atmega48/Makefile
 	avr/lib/dev/atmega48a/Makefile
 	avr/lib/dev/atmega48pa/Makefile
