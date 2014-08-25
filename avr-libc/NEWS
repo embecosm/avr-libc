@@ -1,4 +1,15 @@
-*** Changes since avr-libc-1.8.0:
+*** Changes since avr-libc-1.8.1:
+
+* Bugs fixed:
+
+* New devices supported:
+
+* Contributed Patches:
+
+* Other changes:
+
+
+*** Changes in avr-libc-1.8.1:
 
 * Bugs fixed:
 
@@ -30,6 +41,10 @@
   [#42024] build break regarding avrtiny10
   [#42084] wrong LFUSE_DEFAULT in iotn84a.h
   [#42085] HFUSE_DEFAULT not defined for iotn84.h
+  [#39779] PCIE0 and PCIE1 defined incorrectly for mega165a and mega165pa devices
+  [#38614] dtostrf - wrong behavior or wrong documentation
+  [#42957] missing SPMCSR defines in iom328p.h#
+  [#41690] Bit definitions for SPMCSR
   [no-id]  XXX_vect_num not consistent io90pwmx.h, iousbxx6_7.h
   [no-id]  Specialize clock_prescale_set/get for mega hvb devices
   [no-id]  Update register and bit definitions for tiny 13a/24a/44a/84a,
@@ -63,6 +78,7 @@
   [no-id] correction in xmega wdt_enable and wdt_disable added for xmega
   [#8499] Device ata6289 should be of avr4 architecture
   [no-id] Add RAMSTART, fix RAMSIZE, RAMEND and FLASHEND in device headers
+  [#8512] Rename tiny arch to avrtiny to sync with binutils
 
 * Other changes:
 
@@ -83,6 +99,9 @@
 
   - Add IO register debug symbols to crt*.o, so debuggers can see the
     per-device defined IO registers (and __eeprom).
+
+  - A number of changes have been applied to make avr-libc more C++
+    aware.
 
 *** Changes in avr-libc-1.8.0:
 

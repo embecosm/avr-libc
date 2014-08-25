@@ -142,8 +142,6 @@
 #  include <avr/iom3290.h>
 #elif defined (__AVR_ATmega164P__) || defined (__AVR_ATmega164A__)
 #  include <avr/iom164.h>
-#elif defined (__AVR_ATmega165__) || defined (__AVR_ATmega165A__)
-#  include <avr/iom165.h>
 #elif defined (__AVR_ATmega168__) || defined (__AVR_ATmega168A__)
 #  include <avr/iom168.h>
 #elif defined (__AVR_ATmega169__) || defined (__AVR_ATmega169A__)

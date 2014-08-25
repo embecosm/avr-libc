@@ -39,9 +39,9 @@ dnl library versioning -- modify these on releases
 dnl        macro name           value            description
 m4_define([avr_libc_major],    [1])dnl           major version
 m4_define([avr_libc_minor],    [8])dnl           minor version
-m4_define([avr_libc_revision], [0])dnl           revision (dot-dot version)
+m4_define([avr_libc_revision], [1])dnl           revision (dot-dot version)
 m4_define([avr_libc_revision_suffix], [svn])dnl  revision suffix (if any)
-m4_define([avr_libc_reldate],  [20111229])dnl    release date
+m4_define([avr_libc_reldate],  [20140812])dnl    release date
 dnl end of library versioning data
 
 m4_define([avr_libc_version],
@@ -1158,9 +1158,9 @@ CHECK_AVR_DEVICE(atxmega128a4u)
 AM_CONDITIONAL(HAS_atxmega128a4u, test "x$HAS_atxmega128a4u" = "xyes")
 
 
-# avrtiny10
-CHECK_AVR_DEVICE(avrtiny10)
-AM_CONDITIONAL(HAS_avrtiny10, test "x$HAS_avrtiny10" = "xyes")
+# avrtiny
+CHECK_AVR_DEVICE(avrtiny)
+AM_CONDITIONAL(HAS_avrtiny, test "x$HAS_avrtiny" = "xyes")
 
 CHECK_AVR_DEVICE(attiny4)
 AM_CONDITIONAL(HAS_attiny4, test "x$HAS_attiny4" = "xyes")
@@ -1568,9 +1568,9 @@ AC_CONFIG_FILES([
 ])
 
 
-# avrtiny10
+# avrtiny
 AC_CONFIG_FILES([
-	avr/lib/avrtiny10/Makefile
+	avr/lib/avrtiny/Makefile
 	avr/lib/dev/attiny4/Makefile
 	avr/lib/dev/attiny5/Makefile
 	avr/lib/dev/attiny9/Makefile
