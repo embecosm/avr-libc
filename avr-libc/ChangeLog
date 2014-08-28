@@ -1,3 +1,10 @@
+2014-08-28  Joern Rennecke  <joern.rennecke@embecosm.com>
+
+	* common/asmdef.h (waddi, wsubi): Define.
+	* libc/misc/eeupd_word.S: Replaced adiw with wadi macro.
+	* libc/misc/eeupd_dword.S: Likewise.
+	* libc/libc/misc/eedef.h (addr_lo_num): Define.
+
 2014-08-11  Joern Rennecke  <joern.rennecke@embecosm.com>
 
 	* include/avr/wdt.h, include/avr/power.h, include/avr/sleep.h:

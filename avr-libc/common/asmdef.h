@@ -275,4 +275,22 @@ _U(\name):
   .endif
 .endm
 
+.macro waddi r_arg1, i_arg2
+#if defined (__AVR_TINY__)
+    subi \r_arg1,   lo8(-\i_arg2)
+    sbci \r_arg1+1, hi8(-\i_arg2)
+#else
+    adiw \r_arg1, \i_arg2
+#endif
+.endm
+
+.macro wsubi r_arg1, i_arg2
+#if defined (__AVR_TINY__)
+    subi \r_arg1,   lo8(\i_arg2)
+    sbci \r_arg1+1, hi8(\i_arg2)
+#else
+    sbiw \r_arg1, \i_arg2
+#endif
+.endm
+
 #endif	/* !_ASMDEF_H */

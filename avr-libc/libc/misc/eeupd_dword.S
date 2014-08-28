@@ -45,7 +45,7 @@
 ENTRY	eeprom_update_dword
 ENTRY	eeprom_update_float
 
-	adiw	addr_lo, 3
+	waddi	addr_lo_num, 3
 	mov	r18, r23		; val_hhi
 	XCALL	eeprom_update_r18
 	XCALL	eeprom_update_byte	; val_hlo

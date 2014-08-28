@@ -43,7 +43,7 @@
 
 ENTRY	eeprom_update_word
 
-	adiw	addr_lo, 1
+	waddi	addr_lo_num, 1
 	mov	r18, r23		; val_hi
 	XCALL	eeprom_update_r18
 	XJMP	eeprom_update_byte	; val_lo

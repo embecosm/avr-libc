@@ -36,6 +36,7 @@
 /* EEPROM address arg for a set of byte/word/dword functions and for
    the internal eeprom_read_blraw().	*/
 #define addr_lo	r24
+#define addr_lo_num /*r*/24
 #define addr_hi	r25
 
 /* Number of bytes arg for all block read/write functions, include
