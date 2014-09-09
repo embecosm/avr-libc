@@ -1,3 +1,7 @@
+2014-09-09  Joern Rennecke  <joern.rennecke@embecosm.com>
+
+	* include/avr/power.h (power_all_disable): Fix typo.
+
 2014-08-28  Joern Rennecke  <joern.rennecke@embecosm.com>
 
 	* common/asmdef.h (waddi, wsubi): Define.

@@ -1157,7 +1157,7 @@ __power_all_enable (bool enable)
 #endif
 
 #ifndef power_all_disable
-#define power_all_disable __power_all_disable (false)
+#define power_all_disable __power_all_enable (false)
 #endif
 
 
