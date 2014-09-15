@@ -1,3 +1,7 @@
+2014-09-15  Joern Rennecke  <joern.rennecke@embecosm.com>
+
+	* include/sys/types.h (pid_t): New typedef.
+
 2014-09-09  Joern Rennecke  <joern.rennecke@embecosm.com>
 
 	* include/avr/power.h (power_all_disable): Fix typo.
