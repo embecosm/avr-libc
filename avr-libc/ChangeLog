@@ -1,3 +1,9 @@
+2014-09-18  Joern Rennecke  <joern.rennecke@embecosm.com>
+
+	* include/avr/power.h [__AVR_ATxmega16D4__ || __AVR_ATxmega32D4__]
+	(power_all_enable, power_all_disable): Remove special case, as
+	it was actually a bug.
+
 2014-09-15  Joern Rennecke  <joern.rennecke@embecosm.com>
 
 	* include/sys/types.h (pid_t): New typedef.

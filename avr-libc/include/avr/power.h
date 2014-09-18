@@ -640,34 +640,6 @@ the clock below 131.072 kHz.
 // Xmega A series has AES, EBI and DMA bits
 // Mark any other device on need basis in respective io*.h
 
-/* ??? irregular, e.g. no PR_DAC_bm handling ??? */
-#if defined(__AVR_ATxmega16D4__) \
-|| defined(__AVR_ATxmega32D4__) 
-
-#define power_all_enable() \
-do { \
-    PR_PRGEN &= (uint8_t)~(PR_RTC_bm|PR_EVSYS_bm); \
-    PR_PRPA &= (uint8_t)~(PR_ADC_bm|PR_AC_bm); \
-    PR_PRPB &= (uint8_t)~(PR_ADC_bm|PR_AC_bm); \
-    PR_PRPC &= (uint8_t)~(PR_TWI_bm|PR_USART0_bm|PR_SPI_bm|PR_HIRES_bm|PR_TC1_bm|PR_TC0_bm); \
-    PR_PRPD &= (uint8_t)~(PR_TWI_bm|PR_USART0_bm|PR_SPI_bm|PR_HIRES_bm|PR_TC1_bm|PR_TC0_bm); \
-    PR_PRPE &= (uint8_t)~(PR_TWI_bm|PR_USART0_bm|PR_SPI_bm|PR_HIRES_bm|PR_TC1_bm|PR_TC0_bm); \
-    PR_PRPF &= (uint8_t)~(PR_TWI_bm|PR_USART0_bm|PR_SPI_bm|PR_HIRES_bm|PR_TC1_bm|PR_TC0_bm); \
-} while(0)
-
-
-#define power_all_disable() \
-do { \
-    PR_PRGEN|= (uint8_t)(PR_EBI_bm|PR_RTC_bm|PR_EVSYS_bm|PR_DMA_bm); \
-    PR_PRPA |= (uint8_t)(PR_ADC_bm|PR_AC_bm); \
-    PR_PRPB |= (uint8_t)(PR_ADC_bm|PR_AC_bm); \
-    PR_PRPC |= (uint8_t)(PR_TWI_bm|PR_USART0_bm|PR_SPI_bm|PR_HIRES_bm|PR_TC1_bm|PR_TC0_bm); \
-    PR_PRPD |= (uint8_t)(PR_TWI_bm|PR_USART0_bm|PR_SPI_bm|PR_HIRES_bm|PR_TC1_bm|PR_TC0_bm); \
-    PR_PRPE |= (uint8_t)(PR_TWI_bm|PR_USART0_bm|PR_SPI_bm|PR_HIRES_bm|PR_TC1_bm|PR_TC0_bm); \
-    PR_PRPF |= (uint8_t)(PR_TWI_bm|PR_USART0_bm|PR_SPI_bm|PR_HIRES_bm|PR_TC1_bm|PR_TC0_bm); \
-} while(0)
-#endif /* __AVR_ATxmega16D4__) || __AVR_ATxmega32D4__ */
-
 /* Use !defined(..._enable) so that io<mcu>.h can override our definitions if they won't
    work for a new device.  */
 
