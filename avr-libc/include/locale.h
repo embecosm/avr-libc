@@ -14,4 +14,4 @@ extern char *setlocale(int category, const char *locale);
 extern struct lconv *localeconv(void);
 #endif
 
-#endif /* L_OCALE_H */
+#endif /* _LOCALE_H */

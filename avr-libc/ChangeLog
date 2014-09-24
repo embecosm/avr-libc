@@ -1,3 +1,7 @@
+2014-09-24  Joern Rennecke  <joern.rennecke@embecosm.com>
+
+	* include/locale.h: Comment typo fix.
+
 2014-09-18  Joern Rennecke  <joern.rennecke@embecosm.com>
 
 	* include/avr/power.h [__AVR_ATxmega16D4__ || __AVR_ATxmega32D4__]
