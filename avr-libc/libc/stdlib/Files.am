@@ -46,6 +46,7 @@ stdlib_a_c_sources = \
 	rand.c \
 	random.c \
 	realloc.c \
+	setlocale.c \
 	strtod.c \
 	strtol.c \
 	strtoul.c \

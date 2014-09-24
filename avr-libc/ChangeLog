@@ -1,5 +1,10 @@
 2014-09-24  Joern Rennecke  <joern.rennecke@embecosm.com>
 
+	* libc/stdlib/Files.am (stdlib_a_c_sources): Add setlocale.c .
+	* libc/stdlib/setlocale.c: New file.
+
+2014-09-24  Joern Rennecke  <joern.rennecke@embecosm.com>
+
 	* include/locale.h: Comment typo fix.
 
 2014-09-18  Joern Rennecke  <joern.rennecke@embecosm.com>
